@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Technology Management - DIAT,DRDO.</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "09lb8Pvp6mSZJ9tWr",
+      });
+   })();
+
+</script>
+
+<script>
+    function sendEmail(){
+        var params = {
+            name : document.getElementById("name").value,
+            email : document.getElementById("email").value,
+            subject : document.getElementById("subject").value,
+            message : document.getElementById("message").value
+        };
+
+        const serviceID = "service_33hrvtg";
+        const templateID = "template_94t1kmd";
+
+        emailjs.send(serviceID,templateID,params)
+        .then(
+            res => {
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("subject").value = "";
+                document.getElementById("message").value = "";
+                console.log(res);
+                alert("your message sent successfully")
+            })
+            .catch(err => console.log);
+            
+    }
+</script>
+
+
+
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <header style="background-color: #13357B; color: white;" >
+            <div class="logo-container">
+                <img loading="lazy" width="129" height="120" src="https://diat.ac.in/wp-content/uploads/2023/08/DIAT_LOGO-removebg.png" 
+                class="attachment-full size-full wp-image-191" alt="">
+            </div>
+        
+            <div class="heading">
+                <h2 style="line-height: 1; color: white;">Department of Technology Management</h2>
+                <h3 style="line-height: 0.5; color: white;">DIAT, DRDO</h3>
+                <p></p>
+                <p>DIAT, DRDO</p>
+            </div>
+        </header>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link active">Courses</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Courses</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">Courses</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+               <!-- Gallery Start -->
+               <div class="container-fluid gallery py-5 my-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">Our Courses</h5>
+                    <h1 class="mb-4">Explore the courses provided by DIAT.</h1>
+                    <p class="mb-0">The M.Tech programme in Technology Management has commenced at DIAT,Pune, from A.Y 2014-2015. DUring the initial period, admission was restricted to sponsored candidates only. However 
+                        it has been opened for civilian candidates as well. DRDO, DSPUs, Ordnance Factories, Indian Coast Guard, Defence Services, and Defence Industry Partners have been requested to nominate candidates.
+                        The sponsored candidates would be required to stay at DIAT campus, Pune, for the first year (2 semesters) and complete all the mandatoey couse work as per UGC guidelines.
+                    </p>
+                    <p></p>
+                </div>
+                <div class="tab-class text-center">
+                    <div class="tab-content">
+                        <div id="GalleryTab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-2">
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-1.jpg" data-lightbox="gallery-1" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-4.jpg" data-lightbox="gallery-4" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-5.jpg" data-lightbox="gallery-5" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-6.jpeg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-6.jpeg" data-lightbox="gallery-6" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-7.jpeg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-7.jpeg" data-lightbox="gallery-7" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-8.jpeg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-8.jpeg" data-lightbox="gallery-8" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="GalleryTab-2" class="tab-pane fade show p-0">
+                            <div class="row g-2">
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="GalleryTab-3" class="tab-pane fade show p-0">
+                            <div class="row g-2">
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="GalleryTab-4" class="tab-pane fade show p-0">
+                            <div class="row g-2">
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="GalleryTab-5" class="tab-pane fade show p-0">
+                            <div class="row g-2">
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                        <div class="gallery-content">
+                                            <div class="gallery-info">
+                                                <h5 class="text-white text-uppercase mb-2">World Tour</h5>
+                                                <a href="#" class="btn-hover text-white">View All Place <i class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-plus-icon">
+                                            <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-plus fa-2x text-white"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid contact bg-light py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3">Any queries ?</h5>
+                    <h1 class="mb-0">Send us a message</h1>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="bg-white rounded p-4">
+                            <div class="text-center mb-4">
+                                <i class="fa fa-map-marker-alt fa-3x text-primary"></i>
+                                <h4 class="text-primary"><Address></Address></h4>
+                                <p class="mb-0">Defence Institute of Advanced Technology, (Deemed to be University), <br>  Girinagar, Pune 411025, India</p>
+                            </div>
+                            <div class="text-center mb-4">
+                                <i class="fa fa-phone-alt fa-3x text-primary mb-3"></i>
+                                <h4 class="text-primary">Phone</h4>
+                                <p class="mb-0">020-24604410</p>
+                                <p class="mb-0">020-24604415</p>
+                                <p class="mb-0">020-24604408</p>
+                                <p class="mb-0">020-24604403</p>
+                            </div>
+                           
+                            <div class="text-center">
+                                <i class="fa fa-home fa-3x text-primary mb-3"></i>
+                                <h4 class="text-primary">Visit</h4>
+                                <a href="www.diat.ac.in">www.diat.ac.in</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h3 class="mb-2">Drop your details in the form.</h3>
+                        <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        <!-- onsubmit="sendEmail(); reset(); return false;" -->
+                        <form action="/" method="post">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" name="n" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating" >
+                                        <input type="email" class="form-control border-0" name="e" id="email" placeholder="Your Email">
+                                        <label for="email"  id="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" name="s" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0" name="m" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit" onclick="sendEmail()">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <div class="rounded">
+                            <iframe class="rounded w-100" 
+                            style="height: 450px;" src="https://maps.google.com/maps?q=Defence%20Institute%20of%20Advanced%20Technology%2C%20%28Deemed%20to%20be%20University%29%2C%20Girinagar%2C%20Pune%20411025&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright text-body py-4" style="display:flex ; align-items: center; ">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-end mb-md-0">
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="https://diat.ac.in/">DIAT,DRDO</a> All right reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-start">
+                        Designed &amp; Developed By <a class="text-white" href="https://www.linkedin.com/in/abhishek-puri-989b00211/">Abhishek Puri</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+         
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
