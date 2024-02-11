@@ -4,7 +4,7 @@ const app = express();
 const port = 8000;
 
 
-const Register = require("./src/models/register");
+const Register = require("./models/register");
 // const {json} = require("express")
 
 
